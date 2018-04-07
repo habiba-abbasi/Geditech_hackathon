@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MedicalReserve</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+
+    <string name="team_name">Maverick</string>
+
+
+    <string name="home_screen_opt_1">LOGIN</string>
+    <string name="home_screen_opt_2">REGISTER</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string name="title_activity_wallet">WalletActivity</string>
+    <string name="activity_wallet">WALLET</string>
+    <string name="activity_topup">TOP UP</string>
+    <string name="activity_share">SHARE</string>
+    <string name="activity_transfer">TRANSFER</string>
+    <string name="activity_discount">Discount Voucher</string>
+
+    <string name="title_activity_share">ShareActivity</string>
+
+    <string name="title_activity_transfer">TransferActivity</string>
+
+    <string name="title_activity_top_up">TopUpActivity</string>
+
+    <string name="title_activity_dis_voucher">DisVoucherActivity</string>
+
+    <string name="title_activity_credit_card3">CreditCard3Activity</string>
+
+    <string name="title_activity_credit_card1">CreditCard1Activity</string>
+</resources>

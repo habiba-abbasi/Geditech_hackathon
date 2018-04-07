@@ -1,5 +1,6 @@
 package com.hackathon.gaditech.socialLogistic;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Handler;
@@ -8,7 +9,7 @@ import android.os.Bundle;
 
 import com.hackathon.gaditech.socialLogistic.databinding.ActivitySplashBinding;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
 
     ActivitySplashBinding binding;
     public static  int SPLASH_TIME_OUT=3000;
@@ -20,9 +21,6 @@ public class SplashActivity extends AppCompatActivity {
         //calligrapher.setFont(this,"Roboto-Thin.ttf",true);
 
 
-        //Font styling
-//        Calligrapher calligrapher=new Calligrapher(SplashActivity.this);
-//        calligrapher.setFont(SplashActivity.this,"Roboto-Thin.ttf",true);
 
         new Handler().postDelayed(new Runnable() {
             @Override

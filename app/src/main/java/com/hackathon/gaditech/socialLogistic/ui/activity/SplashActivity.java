@@ -1,4 +1,4 @@
-package com.hackathon.gaditech.socialLogistic;
+package com.hackathon.gaditech.socialLogistic.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.hackathon.gaditech.socialLogistic.R;
 import com.hackathon.gaditech.socialLogistic.databinding.ActivitySplashBinding;
 
 public class SplashActivity extends Activity {
@@ -16,7 +17,7 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_splash);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_splash);
         // calligrapher =new Calligrapher(this);
         //calligrapher.setFont(this,"Roboto-Thin.ttf",true);
 

@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +14,7 @@
 
     <!-- Login progress -->
     <ProgressBar
-        android:id="@+id/login_progress"
+        android:id="@+id/loginProgress"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,14 +26,14 @@
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true">
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:layout_above="@+id/linearLayout"
             android:layout_marginBottom="10dp"
             android:src="@mipmap/logo" />
@@ -40,17 +41,20 @@
     </FrameLayout>
 
     <ScrollView
-        android:id="@+id/login_form"
+        android:id="@+id/loginForm"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
 
         <LinearLayout
-            android:id="@+id/email_login_form"
+            android:id="@+id/emailLoginForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="10dp">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -60,9 +64,8 @@
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="enter Name"
+                    android:hint="Enter Name"
                     android:padding="10dp"
-                    android:inputType="textEmailAddress"
                     android:background="@drawable/round_input"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -71,7 +74,8 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <EditText
                     android:id="@+id/password"
@@ -96,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:text="@string/login_screen_opt_1"
                 android:textStyle="bold"
                 android:textColor="@color/colorWhite"
 
@@ -109,9 +113,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="REGISTER"
+                android:text="@string/login_screen_opt_2"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
+</layout>

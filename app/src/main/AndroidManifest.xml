@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,8 +23,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:name="com.hackathon.gaditech.socialLogistic.ui.activity.LoginActivity">
+        </activity>
+
+        <activity android:name=".ui.activity.RegisterActivity"></activity>
     </application>
 
 </manifest>

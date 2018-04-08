@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@color/colorAccent1"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -19,10 +20,31 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/logo" />
+
+    </FrameLayout>
+
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -37,9 +59,11 @@
                 <AutoCompleteTextView
                     android:id="@+id/email"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/prompt_email"
+                    android:layout_height="50dp"
+                    android:hint="enter Name"
+                    android:padding="10dp"
                     android:inputType="textEmailAddress"
+                    android:background="@drawable/round_input"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -52,9 +76,12 @@
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:hint="@string/prompt_password"
                     android:imeActionId="6"
+                    android:padding="10dp"
+
+                    android:background="@drawable/round_input"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
@@ -70,8 +97,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
 
+                android:background="@drawable/round_button"/>
+
+            <Button
+                android:id="@+id/btRegister"
+                android:background="@drawable/round_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="REGISTER"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

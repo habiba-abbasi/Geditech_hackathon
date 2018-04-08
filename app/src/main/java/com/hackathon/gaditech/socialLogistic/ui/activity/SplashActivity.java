@@ -10,7 +10,7 @@ import android.os.Bundle;
 import com.hackathon.gaditech.socialLogistic.R;
 import com.hackathon.gaditech.socialLogistic.databinding.ActivitySplashBinding;
 
-public class SplashActivity extends Activity {
+public class SplashActivity extends AppCompatActivity {
 
     ActivitySplashBinding binding;
     public static  int SPLASH_TIME_OUT=3000;
@@ -26,9 +26,7 @@ public class SplashActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent= new Intent(SplashActivity.this,LoginActivity.class);
-                startActivity(intent);
-
+                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
                 //close the activity
                 finish();
             }

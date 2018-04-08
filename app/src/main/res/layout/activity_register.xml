@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hackathon18.maverick.ui.activity.RegisterActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:id="@+id/actBar"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backBt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                />
+            <!--<Button-->
+            <!--android:id="@+id/backBt"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/back_button"-->
+            <!--android:layout_marginLeft="10dp"-->
+
+            <!--/>-->
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@id/actBar"
+            android:layout_height="2dp"
+            android:weightSum="3"
+            android:background="#f9f8f5">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/line"
+            android:textSize="35dp"
+            tools:ignore="UnknownId" />
+
+
+        <EditText
+            android:id="@+id/etRegisterUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_below="@id/txtregister"
+            android:inputType="text"
+            android:hint="Enter Username or Email Id"
+            />
+
+        <EditText
+            android:id="@+id/etRegisterCNIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etRegisterUsername"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            android:hint="Enter CNIC"/>
+
+        <EditText
+            android:id="@+id/etRegisterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etRegisterCNIC"
+            android:layout_margin="15dp"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etRegisterPhone"
+            android:layout_margin="15dp"
+            android:inputType="textPassword"
+            android:hint="Enter Password"/>
+
+
+
+        <Button
+            android:text="@string/home_screen_opt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btRegister"
+            android:textSize="25sp"
+
+            android:layout_below="@id/etRegisterPassword"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</layout>

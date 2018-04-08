@@ -8,7 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.app.LoaderManager.LoaderCallbacks;
-
+import com.hackathon.gaditech.socialLogistic.R;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
@@ -31,8 +31,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.hackathon.gaditech.socialLogistic.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 

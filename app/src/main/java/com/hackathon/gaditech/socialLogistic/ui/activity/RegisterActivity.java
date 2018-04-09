@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
 //                Log.v("Name", "Name: "+Username);
 //                String Cnic=binding.etRegisterCNIC.getText().toString();
 //                String Password= binding.etRegisterPassword.getText().toString();
-//                User currentUser=new User (Username,Cnic,Password);
+//                UserList currentUser=new UserList (Username,Cnic,Password);
 //                String Credits=String.valueOf(currentUser.creditsOfNewUser());
 //
 //                Intent intent = new Intent(getApplicationContext(),WalletActivity.class);
@@ -41,16 +41,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         });
 
-        binding.backBt.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v){
-               /* Intent intent=new Intent(getApplicationContext(),CategoryActivity.class);
-                startActivity(intent);*/
-                onBackPressed();
-
-            }
-
-        });
     }
 }
